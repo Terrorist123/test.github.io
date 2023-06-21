@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 <head>
   <title>Dirouniya</title>
@@ -12,16 +12,17 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
+      color: #ffffff; /* Alle tekst wit maken */
     }
 
     header {
-      background-color: #333; /* Kleur van de header aangepast naar donkergrijs */
+      background-color: #333;
       padding: 20px;
       text-align: center;
     }
 
     h1 {
-      color: #fff; /* Tekstkleur van de header aangepast naar wit */
+      color: #ffffff;
     }
 
     nav ul {
@@ -38,7 +39,7 @@
 
     nav ul li a {
       text-decoration: none;
-      color: #ccc; /* Tekstkleur van de navigatielinks aangepast naar lichtgrijs */
+      color: #cccccc;
       padding: 5px;
     }
 
@@ -48,14 +49,14 @@
     }
 
     h2 {
-      color: #333;
+      color: #333333;
     }
 
     img {
-      max-width: 450px; /* De maximale breedte van de afbeeldingen aangepast naar 300px */
+      max-width: 450px;
       height: auto;
       display: block;
-      margin: 0 auto; /* Centreren van de afbeeldingen */
+      margin: 0 auto;
     }
 
     .fade-in {
@@ -72,10 +73,10 @@
     }
 
     footer {
-      background-color: #333;
+      background-color: #333333;
       padding: 20px;
       text-align: center;
-      color: #fff;
+      color: #ffffff;
     }
 
     .social-icons {
@@ -88,13 +89,41 @@
       display: inline-block;
       margin-right: 10px;
     }
-    
+
     .social-icons img {
-      max-width: 30px; /* Breedte van de sociale media-logo's aangepast naar 30px */
+      max-width: 30px;
       height: auto;
     }
+
+    /* Aanpassingen voor het contactformulier */
+    form label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"],
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #cccccc;
+    }
+
+    form input[type="submit"] {
+      background-color: #333333;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    form input[type="submit"]:hover {
+      background-color: #555555;
+    }
   </style>
-  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Voegt viewport meta tag toe voor responsive weergave -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <header>
@@ -165,29 +194,23 @@
       <label for="email">E-mailadres:</label>
       <input type="email" id="email" name="email" required><br>
 
-      <label for="phone">Telefoonnummer:</label> <!-- Toegevoegd veld voor telefoonnummer -->
+      <label for="phone">Telefoonnummer:</label>
       <input type="tel" id="phone" name="phone"><br>
 
       <label for="message">Bericht:</label>
       <textarea id="message" name="message" required></textarea><br>
 
-      <input type="submit" value="Versturen">
+      <input type="submit" value="Verstuur">
     </form>
   </section>
 
   <footer>
     <div class="social-icons">
-      <a href="#"><img src="instagram-logo.png" alt="Instagram"></a>
-      <a href="#"><img src="tik-tok.png" alt="TikTok"></a>
-      <a href="#"><img src="facebook.png" alt="Facebook"></a>
-      <a href="#"><img src="snapchat-logo.png" alt="Snapchat"></a>
-      <a href="#"><img src="twitter-logo.png" alt="Twitter"></a>
+      <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+      <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+      <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
     </div>
-    <p>&copy; Talentontwikkeling voor jongeren.</p>
+    <p>&copy; 2023 Dirouniya. Alle rechten voorbehouden.</p>
   </footer>
-
-  <script>
-    // JavaScript-code hier (indien nodig)
-  </script>
 </body>
 </html>
