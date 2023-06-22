@@ -188,7 +188,20 @@
     <h2>Contact</h2>
     <p>Vul het onderstaande formulier in om contact met ons op te nemen of u in te schrijven voor een training, coaching sessie of cursus:</p>
     <form id="contactForm" action="https://formspree.io/f/xjvdnqlo" method="POST">
-      <!-- Form fields -->
+      <label for="name">Naam:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="type">Type:</label>
+      <select id="type" name="type" required>
+        <option value="training">Training</option>
+        <option value="coaching">Coaching</option>
+        <option value="cursus">Cursus</option>
+        <option value="overige">Overige</option>
+      </select>
+
       <input type="submit" value="Verstuur">
     </form>
   </section>
@@ -211,4 +224,3 @@
   </script>
 </body>
 </html>
-
