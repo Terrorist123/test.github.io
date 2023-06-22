@@ -195,7 +195,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   mail($to, $subject, $body, $headers);
 
   // Redirect naar een bedankpagina
-  header(bedankpagina.html); // Vervang dit met de gewenste bedankpagina
-  exit();
+header("Location: bedanktpagina.html");
+exit();
 }
 ?>
+
