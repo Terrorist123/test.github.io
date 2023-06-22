@@ -187,20 +187,8 @@
   <section id="contact">
     <h2>Contact</h2>
     <p>Vul het onderstaande formulier in om contact met ons op te nemen of u in te schrijven voor een training, coaching sessie of cursus:</p>
-    <form action="https://formspree.io/f/xjvdnqlo" method="POST">
-
-      <label for="name">Naam:</label>
-      <input type="text" id="name" name="name" required><br>
-
-      <label for="email">E-mailadres:</label>
-      <input type="email" id="email" name="email" required><br>
-
-      <label for="phone">Telefoonnummer:</label>
-      <input type="tel" id="phone" name="phone"><br>
-
-      <label for="message">Bericht:</label>
-      <textarea id="message" name="message" required></textarea><br>
-
+    <form id="contactForm" action="https://formspree.io/f/xjvdnqlo" method="POST">
+      <!-- Form fields -->
       <input type="submit" value="Verstuur">
     </form>
   </section>
@@ -213,5 +201,14 @@
     </div>
     <p>&copy; 2023 Dirouniya. Alle rechten voorbehouden.</p>
   </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault(); // Prevent the default form submit behavior
+      this.submit(); // Submit the form
+      window.location.href = "bedankpagina.html"; // Redirect to the thank you page
+    });
+  </script>
 </body>
 </html>
+
