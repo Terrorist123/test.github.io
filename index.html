@@ -189,10 +189,16 @@
     <p>Vul het onderstaande formulier in om contact met ons op te nemen of u in te schrijven voor een training, coaching sessie of cursus:</p>
     <form id="contactForm" action="https://formspree.io/f/xjvdnqlo" method="POST">
       <label for="name">Naam:</label>
-      <input type="text" id="name" name="name" required>
+      <input type="text" id="name" name="name" required><br>
 
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" required>
+      <label for="email">E-mailadres:</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="phone">Telefoonnummer:</label>
+      <input type="tel" id="phone" name="phone"><br>
+
+      <label for="message">Bericht:</label>
+      <textarea id="message" name="message" required></textarea><br>
 
       <label for="type">Type:</label>
       <select id="type" name="type" required>
